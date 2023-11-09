@@ -1,0 +1,15 @@
+{
+    "monitor": [
+        "NVDA",
+        "BTC-USD",
+        "ETH-USD",
+        "AAPL",
+        "^IXIC",
+        "EURUSD=X",
+        "^HSI",
+        "^GSPC",
+        "MULTI.OL",
+        "XMR-USD",
+        "ZEC-USD"
+    ]
+}

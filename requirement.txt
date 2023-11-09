@@ -1,0 +1,12 @@
+yfinance
+pandas
+inquirer
+TA-Lib
+fastapi
+tensorflow
+numpy
+pandas
+tensorflow
+keras
+scikit-learn
+StandardScaler
