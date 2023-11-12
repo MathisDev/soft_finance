@@ -1,1 +1,5 @@
 uvicorn
+subprocess.run
+inquirer
+yfinance
+fastapi
