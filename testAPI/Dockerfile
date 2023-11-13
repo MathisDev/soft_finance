@@ -1,6 +1,5 @@
 FROM python:3.7-alpine
 WORKDIR /
 ADD . /
-RUN bash update.sh
 RUN pip3 install -r requirements.txt
-CMD ["bash", "start_api.sh"]
+CMD ["python3", "test.py"]
