@@ -1,5 +1,0 @@
-service:
-  api_data:
-    build: api_data/
-    port:
-      - "8000:5000"
