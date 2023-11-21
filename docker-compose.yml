@@ -1,20 +1,28 @@
 version: '3'
 services:
   api_data:
-    build: test_api/
+    build: api_data/
+    container_name: api_data
     ports:
       - "8000:80"
     networks:
       - main_reseau
 
-  test_api:
-    build: api_data/
+  nginx_acces:
+    build: nginx_acces/
+    container_name: nginx_acces
     ports:
       - "8001:80"
+      - "8888:22"
     networks:
       - main_reseau
+
+  data_base:
+    build: db/
+    container_name: data_base
+    volumes:
+      - mydata:/path/in/container_name  
 
 networks:
   main_reseau:
     driver: bridge
-

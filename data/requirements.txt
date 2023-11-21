@@ -1,0 +1,4 @@
+uvicorn
+subprocess.run
+inquirer
+fastapi
