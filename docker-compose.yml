@@ -17,11 +17,11 @@ services:
     networks:
       - main_reseau
 
-  data_base:
-    build: db/
-    container_name: data_base
-    volumes:
-      - mydata:/path/in/container_name  
+        #data_base:
+        #build: data/
+        #container_name: data_base
+        #volumes:
+        #- mydata:/path/in/container_name  
 
 networks:
   main_reseau:
