@@ -22,9 +22,9 @@ This project aims to provide a comprehensive solution for retrieving historical 
 ### Installation
 To use this project, follow these steps:
 1. Clone the repository: `git clone https://github.com/MathisDev/soft_finance.git)`
-2. Install dependencies: `pip install -r requirements.txt`
+2. Install dependencies: `sudo apt-get update;sudo apt-get install docker-compose-plugin`
 
 ### Usage
 1. **Data Retrieval**: Run the data retrieval script providing necessary parameters like stock symbol and time range.
    ```bash
-   python main.py
+   docker-compose up
