@@ -16,7 +16,7 @@ This project aims to provide a comprehensive solution for retrieving historical 
   - Moving Averages (e.g., Simple Moving Average, Exponential Moving Average)
   - Volatility Measures (e.g., Standard Deviation, Average True Range)
   - Returns (e.g., Daily Returns, Cumulative Returns)
-- **Analysis and Visualization**: Utilizes libraries like Pandas, Matplotlib, or Plotly for analyzing data and creating insightful visualizations such as time series plots, histograms, and heatmaps.
+- **Analysis**: Utilizes libraries like Pandas for analyzing data .
 - **Linking Metrics**: Establishes relationships between different metrics to uncover patterns and trends in stock price behavior.
   
 ### Installation
