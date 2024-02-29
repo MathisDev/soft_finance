@@ -21,7 +21,7 @@ This project aims to provide a comprehensive solution for retrieving historical 
   
 ### Installation
 To use this project, follow these steps:
-1. Clone the repository: `git clone https://github.com/your/repository.git`
+1. Clone the repository: `git clone https://github.com/MathisDev/soft_finance.git)`
 2. Install dependencies: `pip install -r requirements.txt`
 
 ### Usage
