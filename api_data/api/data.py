@@ -66,7 +66,7 @@ class Metric:
 class Api:
     def __init__():
         try:
-            response = requests.get("https://google.com", timeout=5)
+            requests.get("https://google.com", timeout=5)
             return True
         except requests.ConnectionError:
             return False

@@ -3,3 +3,4 @@ subprocess.run
 inquirer
 yfinance
 fastapi
+requests
