@@ -3,40 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-        }
-    </style>
+    <title>API Data Table</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Your Website Title</h1>
-        </header>
-        <nav>
-            <!-- Your navigation links go here -->
-        </nav>
-        <section>
-            <article>
-                <h2>Article Title</h2>
-                <p>This is your article content.</p>
-            </article>
-        </section>
-        <footer>
-            <p>&copy; 2023 Your Website</p>
-        </footer>
-    </div>
+    <h1>API Data Table</h1>
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be dynamically inserted here -->
+        </tbody>
+    </table>
+    <script src="script.js"></script>
 </body>
 </html>

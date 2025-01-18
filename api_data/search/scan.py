@@ -1,7 +1,6 @@
 # import static
 from search.config.config_json import *
 from api.data import *
-from metric.main_metric import *
 # import dynamique 
 import numpy as np
 

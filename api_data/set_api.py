@@ -1,16 +1,26 @@
-from metric.main_metric import *
 from api.data import *
-from menu.main_menu import *
 from search.scan import *
 import os
 import time
 from datetime import date
-
+import socket
 from fastapi import FastAPI
 
-app = FastAPI()
+def get_ip():
+    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    s.connect(("8.8.8.8", 80))
+    ip = s.getsockname()[0]
+    s.close()
+    return ip
+
 
 # --- get metode --- #
+
+print("INFO - API is running")
+print("INFO - IP DE l'API :")
+print(get_ip())
+
+app = FastAPI()
 
 @app.get("/rsi")
 def rsi(comp: str):
@@ -22,7 +32,7 @@ def cap(comp: str):
 
 @app.get("/p_days")
 def get_price_day(comp: str):
-    return Api.days_data(comp)
+    return Api.get_price_day(comp)
 
 @app.get("/news")
 def news(comp: str):
@@ -36,7 +46,4 @@ def sma(comp: str,period: str):
 def vol(comp: str,period: str):
     return Metric.volacity(comp,period)
 
-@app.get("/ia_info")
-def ia_info(comp: str,period: str):
-    return Api.get_ia_info(company, period_month)
 # --- post metode --- #
